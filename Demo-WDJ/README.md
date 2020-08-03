@@ -37,10 +37,12 @@
         ----2,cvs_input_path=='data'
         ----3,row_labels,识别种类个数name,return id。跟label_map.pbtxt照应。
         ----4,3：1分成train，eval
+	
         修改cvs_tfrecord.py 
 	----1,image_path=='XXX-imgs'
         ----2,record_input_path=='data'
         ----3,train，eval.record
+	
 	python3 xml_cvs.py cvs_tfrecord.py
 #### 工具文件准备
 	新建label_map.pbtxt

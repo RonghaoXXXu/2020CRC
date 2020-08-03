@@ -75,7 +75,9 @@
         	num_train_steps=训练集训练步数 \
         	num_eval_steps=测试集(评估)测试步数\
         	alsologtostderr
+		
 训练过程中保存的数据都在trainin里
+
 最好在GPU上训练，否则巨慢。
 #### 模型转化
 	%...../object_detection

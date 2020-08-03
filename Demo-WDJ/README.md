@@ -8,18 +8,18 @@
 5，实时目标识别
 ## 模型构建
 ### tensorflow==2.X--Object_detection_API环境安装
-		tensorflow安装，protocf>3.3安装
-		Object_detection_API环境安装
-	% /home/feyker
+	tensorflow安装，protocf>3.3安装
+	Object_detection_API环境安装
+% /home/feyker
 	mkdir models
-cd models
-git clone ....../tensorflow/models
-protoc object_detection/protos/*.proto --python_out=.
-%vim ¬/.bashrc
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
-`pwd`=..../models/research
+	cd models
+	git clone ....../tensorflow/models
+	protoc object_detection/protos/*.proto --python_out=.
+	%vim ¬/.bashrc
+	export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+	`pwd`=..../models/research
 % /home/feyker.../models
-python object_detection/builders/model_builder_test.py
+	python object_detection/builders/model_builder_test.py
 
 出现：run ...  OK...!
 #### 数据准备

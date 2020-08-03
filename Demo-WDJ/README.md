@@ -92,6 +92,16 @@
 
 ## 读取模型
 ### opencvDNN+openvino
+	%模型保存的地方
+	python3 tf_text_graph_ssd.py\
+		frozen_inference_graph.pb\
+		pipline.config\
+		WDJ_v2.pbtxt
+	调用的文件
+	frozen_inference_graph.pb
+	WDJ_v2.pbtxt
+
+详见于cvdnn_vino.cpp
 
 ### openvino+NCS2
 

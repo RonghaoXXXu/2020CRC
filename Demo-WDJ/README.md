@@ -72,10 +72,18 @@
 	python3 model_main.py \
 		pipeline_config_path=training/XXX.config\
         	model_dir=training \
-        	num_train_steps=60000 \
-        	num_eval_steps=20 \
+        	num_train_steps=训练集训练步数 \
+        	num_eval_steps=测试集(评估)测试步数\
         	alsologtostderr
+训练过程中保存的数据都在trainin里
 最好在GPU上训练，否则巨慢。
 #### 模型转化
+	%...../object_detection
+	python3 export_inference_graph.py\
+ 		input_type image_tensor\
+ 		pipeline_config_path training/XXX.config\
+		trained_checkpoint_prefix training/model.ckpt-数字最大，步数最多\
+ 		output_directory 模型保存的地方
+## opencv-dnn读取模型
 
 	

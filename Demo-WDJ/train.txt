@@ -1,0 +1,6 @@
+python3 model_main.py \
+    --pipeline_config_path=training/ssd_mobilenet_v1_coco.config\
+    --model_dir=training \
+    --num_train_steps=60000 \
+    --num_eval_steps=20 \
+    --alsologtostderr

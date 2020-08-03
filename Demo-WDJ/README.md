@@ -1,11 +1,11 @@
 # Demo_WDJ
 -这是一个识别武大靖的demo。主要理清识别思路。
 ## 概述
--本项目使用tensorflow==2.X深度学习框架，借助Object_detection_API进行识别模型训练
--利用opencv—dnn读取模型
--使用openvino进行模型推理加速
--视频操控
--实时目标识别
+1，本项目使用tensorflow==2.X深度学习框架，借助Object_detection_API进行识别模型训练
+2，利用opencv—dnn读取模型
+3，使用openvino进行模型推理加速
+4，视频操控
+5，实时目标识别
 ## 过程实现
 ### tensorflow==2.X--Object_detection_API环境安装
 tensorflow安装，protocf>3.3安装

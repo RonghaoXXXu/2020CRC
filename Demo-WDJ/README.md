@@ -64,4 +64,15 @@
 	注释掉  model.ckpt
 
 #### 开始训练
+	%...../object_detection
+	train.txt
+	python3 model_main.py \
+	--pipeline_config_path=training/XXX.config\
+        --model_dir=training \
+        --num_train_steps=60000 \
+        --num_eval_steps=20 \
+        --alsologtostderr
+最好在GPU上训练，否则巨慢。
+#### 模型转化
 
+	

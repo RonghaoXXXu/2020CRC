@@ -10,14 +10,17 @@
 ### tensorflow==2.X--Object_detection_API环境安装
 	tensorflow安装，protocf>3.3安装
 	Object_detection_API环境安装
+	
 	% /home/feyker
 	mkdir models
 	cd models
 	git clone ....../tensorflow/models
 	protoc object_detection/protos/*.proto --python_out=.
+	
 	%vim ¬/.bashrc
 	export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 	`pwd`=..../models/research
+	
 	% /home/feyker.../models
 	python object_detection/builders/model_builder_test.py
 
@@ -34,16 +37,16 @@
 
 	修改xml_cvs.py 
 	
-	----1,image_path=='XXX-imgs'
-        ----2,cvs_input_path=='data'
-        ----3,row_labels,识别种类个数name,return id。跟label_map.pbtxt照应。
-        ----4,3：1分成train，eval
+	1,image_path=='XXX-imgs'
+        2,cvs_input_path=='data'
+        3,row_labels,识别种类个数name,return id。跟label_map.pbtxt照应。
+        4,3：1分成train，eval
 	
         修改cvs_tfrecord.py 
 	
-	----1,image_path=='XXX-imgs'
-        ----2,record_input_path=='data'
-        ----3,train，eval.record
+	1,image_path=='XXX-imgs'
+        2,record_input_path=='data'
+        3,train，eval.record
 	
 	python3 xml_cvs.py cvs_tfrecord.py
 #### 工具文件准备
@@ -67,11 +70,11 @@
 	%...../object_detection
 	train.txt
 	python3 model_main.py \
-	--pipeline_config_path=training/XXX.config\
-        --model_dir=training \
-        --num_train_steps=60000 \
-        --num_eval_steps=20 \
-        --alsologtostderr
+		pipeline_config_path=training/XXX.config\
+        	model_dir=training \
+        	num_train_steps=60000 \
+        	num_eval_steps=20 \
+        	alsologtostderr
 最好在GPU上训练，否则巨慢。
 #### 模型转化
 

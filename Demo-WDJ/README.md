@@ -1,15 +1,15 @@
 #Demo_WDJ
 -这是一个识别武大靖的demo。主要理清识别思路。
-##概述
+#概述
 -本项目使用tensorflow==2.X深度学习框架，借助Object_detection_API进行识别模型训练
 -利用opencv—dnn读取模型
 -使用openvino进行模型推理加速
 -视频操控
 -实时目标识别
-##过程实现
-###tensorflow==2.X--Object_detection_API环境安装
-####tensorflow安装，protocf>3.3安装
-####Object_detection_API环境安装
+#过程实现
+-tensorflow==2.X--Object_detection_API环境安装
+--tensorflow安装，protocf>3.3安装
+--Object_detection_API环境安装
 % /home/feyker
 mkdir models
 cd models
@@ -22,8 +22,8 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 python object_detection/builders/model_builder_test.py
 
 出现：run ...  OK...!
-###模型构建
-####数据准备
+--模型构建
+---数据准备
 %/home/feyker.../models/research/object_detection
 建议用绝对路径，便于移植。
 mkdir   XXX-imgs----存放训练图片，xml，一定清晰可见，准确有效。暂时不用分train和eval集。
@@ -58,5 +58,5 @@ eval.record
 label_map.pbtxt
 注释掉  model.ckpt
 
-####开始训练
+---开始训练
 

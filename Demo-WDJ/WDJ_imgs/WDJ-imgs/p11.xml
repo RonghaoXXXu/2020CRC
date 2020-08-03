@@ -1,0 +1,26 @@
+<annotation>
+	<folder>WDJ-imgs</folder>
+	<filename>p11.jpeg</filename>
+	<path>/home/youngho/Desktop/CRC/WDJ/WDJ-imgs/p11.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>980</width>
+		<height>611</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>WDJ</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>478</xmin>
+			<ymin>165</ymin>
+			<xmax>625</xmax>
+			<ymax>286</ymax>
+		</bndbox>
+	</object>
+</annotation>

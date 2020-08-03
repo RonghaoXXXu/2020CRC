@@ -1,0 +1,26 @@
+<annotation>
+	<folder>WDJ-imgs</folder>
+	<filename>p8.jpeg</filename>
+	<path>/home/youngho/Desktop/CRC/WDJ/WDJ-imgs/p8.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>409</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>WDJ</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>325</xmin>
+			<ymin>137</ymin>
+			<xmax>409</xmax>
+			<ymax>226</ymax>
+		</bndbox>
+	</object>
+</annotation>

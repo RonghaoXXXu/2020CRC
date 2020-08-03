@@ -6,10 +6,10 @@
 3，使用openvino进行模型推理加速
 4，视频操控
 5，实时目标识别
-## 过程实现
+## 模型构建
 ### tensorflow==2.X--Object_detection_API环境安装
-tensorflow安装，protocf>3.3安装
-Object_detection_API环境安装
+		tensorflow安装，protocf>3.3安装
+		Object_detection_API环境安装
 % /home/feyker
 mkdir models
 cd models
@@ -22,7 +22,6 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 python object_detection/builders/model_builder_test.py
 
 出现：run ...  OK...!
-### 模型构建
 #### 数据准备
 %/home/feyker.../models/research/object_detection
 建议用绝对路径，便于移植。

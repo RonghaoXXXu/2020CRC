@@ -10,8 +10,8 @@
 ### tensorflow==2.X--Object_detection_API环境安装
 		tensorflow安装，protocf>3.3安装
 		Object_detection_API环境安装
-% /home/feyker
-mkdir models
+	% /home/feyker
+	mkdir models
 cd models
 git clone ....../tensorflow/models
 protoc object_detection/protos/*.proto --python_out=.

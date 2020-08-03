@@ -86,6 +86,13 @@
  		pipeline_config_path training/XXX.config\
 		trained_checkpoint_prefix training/model.ckpt-数字最大，步数最多\
  		output_directory 模型保存的地方
-## opencv-dnn读取模型
+	%模型保存的地方
+	frozen_inference_graph.pb
+	pipline.config
+
+## 读取模型
+### opencvDNN+openvino
+
+### openvino+NCS2
 
 	

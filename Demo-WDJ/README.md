@@ -76,7 +76,7 @@
         	num_eval_steps=测试集(评估)测试步数\
         	alsologtostderr
 		
-训练过程中保存的数据都在trainin里
+训练过程中保存的数据都在training里
 
 最好在GPU上训练，否则巨慢。
 #### 模型转化
@@ -92,11 +92,13 @@
 
 ## 读取模型
 ### opencvDNN+openvino
-	%模型保存的地方
-	python3 tf_text_graph_ssd.py\
-		input frozen_inference_graph.pb\
-		config pipline.config\
-		output graph.pbtxt
+	frozen_inference_graph.pb
+	pipline.config
+	
+move to %opencv/samples/dnn
+
+	python3 tf_text_graph_ssd.py --input 模型保存的地方+frozen_inference_graph.pb --config 模型保存的地方+pipline.config
+		--output 模型保存的地方+graph.pbtxt
 	调用的文件
 	frozen_inference_graph.pb
 	graph.pbtxt

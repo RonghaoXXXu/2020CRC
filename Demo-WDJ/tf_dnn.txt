@@ -1,0 +1,2 @@
+python3 tf_text_graph_ssd.py --input /home/youngho/tensorflow-models/research/object_detection/WDJ_Dete/frozen_inference_graph.pb --config /home/youngho/tensorflow-models/research/object_detection/WDJ_Dete/pipeline.config --output /home/youngho/tensorflow-models/research/object_detection/WDJ_Dete/graph.pbtxt
+

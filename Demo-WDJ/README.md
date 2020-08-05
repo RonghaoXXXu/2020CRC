@@ -91,7 +91,7 @@
 	pipline.config
 
 ## 读取模型
-### opencvDNN
+### C++,opencvDNN
 	frozen_inference_graph.pb
 	pipline.config
 	
@@ -104,7 +104,10 @@ move to %opencv/samples/dnn
 	graph.pbtxt
 
 详见于cvdnn_vino.cpp
-
+### python
+	调用的文件
+	label_map.pbtxt
+	frozen_inference_graph.pb
 ### openvino(NCS2)
 
 	

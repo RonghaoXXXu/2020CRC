@@ -70,7 +70,7 @@
 	%...../object_detection
 	train.txt
 	python3 model_main.py \
-		pipeline_config_path=training/XXX.config\
+			pipeline_config_path=training/XXX.config\
         	model_dir=training \
         	num_train_steps=训练集训练步数 \
         	num_eval_steps=测试集(评估)测试步数\

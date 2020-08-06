@@ -103,7 +103,7 @@ move to %opencv/samples/dnn
 	frozen_inference_graph.pb
 	graph.pbtxt
 
-详见于cvdnn_vino.cpp
+详见于demo.cpp
 ### python
 	调用的文件
 	label_map.pbtxt

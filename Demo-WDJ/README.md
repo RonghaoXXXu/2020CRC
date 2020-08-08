@@ -30,6 +30,10 @@
 	建议用绝对路径，便于移植。
 	mkdir   XXX-imgs----存放训练图片，xml，一定清晰可见，准确有效。暂时不用分train和eval集。
             	data----存放cvs,record,label_map.pbtxt
+		-model.ckpt(将解压ssd_mobilenet_v1_coco_11_06_2017.tar.gz得到的model.ckpt.data-00000-of-00001重命名为mode.ckpt)
+            	-model.ckpt.index（解压ssd_mobilenet_v1_coco_11_06_2017.tar.gz得到）
+		-model.ckpt.meta（解压ssd_mobilenet_v1_coco_11_06_2017.tar.gz得到）
+		
         	training----存放模型config，训练过程中分步保存的idex，meda，0000001，eval0
 	mkdir   XXX-model----存放转化过的可用模型
 
@@ -59,7 +63,9 @@
 	...与label标定的时候照应
 
 	配置XXX.config
+	
 	num_classes=1----识别种类数目
+	num_examples=----eval数目
 	batch_size=1 ----数目越大，效果越好。但训练时间越长
 	train.record
 	eval.record

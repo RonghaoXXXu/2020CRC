@@ -3,5 +3,5 @@ This is a repository mainly about 2020 China Robot Competition, including rule d
 ## Demo_WDJ
     tensorflow object_detection API
     openvino 
-## Deno_Jay
+## Demo_Jay
     Pytorch/tensorflow Efficientdet(Google)

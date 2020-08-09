@@ -1,12 +1,26 @@
 
 python3 model_main.py \
-    --pipeline_config_path=training/embedded_ssd_mobilenet_v1_coco.config\
+    --pipeline_config_path=training/ssd_mobilenet_v1_coco.config\
     --model_dir=training \
     --num_train_steps=30000 \
     --num_eval_steps=30 \
     --alsologtostderr
+python3 legacy/train.py\
+    --logtostderr\
+    --train_dir=training\
+    --pipeline_config_path=training/centernet_hourglass104_512x512_coco17_tpu-8.config
+
 python3 export_inference_graph.py\
     --input_type image_tensor\
-    --pipeline_config_path training/ssd_mobilenet_v2_coco.config\
-    --trained_checkpoint_prefix training/model.ckpt-13216\
-    --output_directory SSD_v2
+    --pipeline_config_path training/ssd_mobilenet_v1_coco.config\
+    --trained_checkpoint_prefix training/model.ckpt-30000\
+    --output_directory Models
+
+python3 tf_text_graph_ssd.py\
+    --input Models/frozen_inference_graph.pb\
+    --config Models/pipeline.config\
+    --output Models/graph.pbtxt
+
+
+ python3 -m pip install .
+python3 object_detection/builders/model_builder_test.py

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imgs</folder>
+	<filename>Jay_10018.jpg</filename>
+	<path>/home/youngho/models/research/object_detection/imgs/Jay_10018.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Jay</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>235</xmin>
+			<ymin>28</ymin>
+			<xmax>562</xmax>
+			<ymax>398</ymax>
+		</bndbox>
+	</object>
+</annotation>

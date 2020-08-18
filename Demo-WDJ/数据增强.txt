@@ -1,0 +1,21 @@
+  data_augmentation_options {
+    random_horizontal_flip {
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness {
+      max_delta: 0.2
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+      min_delta: 0.7
+      max_delta: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_saturation {
+      min_delta: 0.9
+      max_delta: 1.1
+    }
+  }
